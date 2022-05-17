@@ -11,5 +11,5 @@ Front page of an application.
 ## Build
 
 1. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-2. Run 'npm run scully' to generate scully routes. This command creates `scully-routes.json` inside the `src/assets` folder which contains the routes of Angular application and is needed for Scully runtime.
-3. Run 'npm run scully:serve' to start two web servers - static prerendered version of website built with Scully and Angular live version of given application.
+2. Run `npm run scully` to generate scully routes. This command creates `scully-routes.json` inside the `src/assets` folder which contains the routes of Angular application and is needed for Scully runtime.
+3. Run `npm run scully:serve` to start two web servers - static prerendered version of website built with Scully and Angular live version of given application.
