@@ -1,10 +1,29 @@
-<div class="list-group mt-3">
-  <a *ngFor="let post of posts"
-      [routerLink]="post.route"
-      class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">{{ post.title }}</h5>
+<div class="article-body list-group mt-3">
+  <article class="article-card list-group-item list-group-item-action" *ngFor="let article of posts">
+
+    <div class="img-box">
+      <img src="{{ article['bannerPath'] }}" alt="" class="article-banner">
     </div>
-    <p class="mb-1">{{ post['description'] }}</p>
-  </a>
+
+    <div class="article-content">
+
+      <a href="#" [routerLink]="article.route" >
+        <h3 class="article-title">{{ article['title'] }}</h3>
+      </a>
+
+      <p class="article-description">{{ article['description'] }}</p>
+
+      <div class="article-content-footer">
+        <div class="author">
+          <img src="{{ article['avatarPath'] }}" alt="" class="author-avatar">
+          <div class="author-info">
+            <a href="#">
+              <h4 class="author-name">{{ article['author'] }}</h4>
+            </a>
+            <div class="publish-date">{{ article['date'] }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
 </div>
